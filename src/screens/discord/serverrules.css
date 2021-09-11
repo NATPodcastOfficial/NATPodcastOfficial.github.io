@@ -1,0 +1,268 @@
+/* ROOT CSS */
+:root { 
+    font-size: 16px;
+}
+
+/* Default Values that applies to the WHOLE Document/Webpage */
+* { 
+    margin: 0; 
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Body Element Styling */
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(24, 24, 24);
+    color: var(--white);
+
+    width: 100%;
+    height: 100%;
+
+    /* Variables */
+    --burple: #5865F2;
+    --green: #57F287;
+    --yellow: #FEE75C;
+    --fuchsia: #EB459E;
+    --red: #ED4245;
+    --white: #FFFFFF;
+    --black: #000000;
+
+    --navy: #001f3f;
+    --aqua: #7FDBFF;
+    --silver: #DDDDDD;
+
+    --color-primary: #217ecf;
+	--color-primary-dark: #0d416e;
+	--color-secondary: #0b7272;
+	--color-error: #cc3333;
+	--color-success: #4bb544;
+	--color-bg-blue: rgb(64, 116, 197);
+	--color-bg-crimson: rgb(194, 54, 75);
+	--color-bg-orange: rgb(209, 80, 50);
+
+	--border-radius: 4px;
+
+    --transition-speed-200: 200ms;
+    --transition-speed-300: 300ms;
+    --transition-speed-400: 400ms;
+    --transition-speed-500: 500ms;
+    --transition-speed-600: 600ms;
+}
+
+.navbar {
+    display: flex;
+    padding: 1rem;
+    text-align: center;
+    align-items: center;
+    background: var(--color-primary);
+    border-radius: 6px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    height: 100px;
+}
+
+.title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.title:hover {
+    color: var(--navy);
+    text-decoration: underline;
+    transition: all 300ms ease-in;
+}
+
+ion-icon {
+    font-size: 32px;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    margin-left: 2rem;
+}
+
+.home, .home-btn {
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.btn {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.home-btn:hover {
+    color: black;
+    transition: all var(--transition-speed-300);
+}
+
+.episodes-btn:hover {
+    color: black;
+    transition: all var(--transition-speed-300);
+}
+
+.discord-btn:hover {
+    color: black;
+    transition: all var(--transition-speed-300);
+}
+
+.about-us-btn:hover {
+    color: black;
+    transition: all var(--transition-speed-300);
+}
+
+.contact-btn:hover {
+    color: black;
+    transition: all var(--transition-speed-300);
+}
+
+/* Body Styling */
+.introduction {
+    font-family: Arial, Helvetica, sans-serif;
+    /* Center vertically and horizontally */
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    right: 25%;
+    text-align: center;
+    align-items: center;
+    margin: -25px 0 0 -25px;
+}
+
+.textBtn {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.textBtn:hover {
+    text-decoration: underline;
+    color: var(--burple);
+    transition: all var(--transition-speed-300) ease;
+}
+
+.titleIntro {
+    cursor: pointer;
+    background: -webkit-linear-gradient(45deg, rgb(56, 127, 207), rgb(42, 242, 153));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.textIntro {
+    font-size: 18px;
+    padding-top: .5rem;
+    background: -webkit-linear-gradient(60deg, rgb(49, 104, 206), rgb(109, 150, 226));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.titleInfo {
+    cursor: pointer;
+    background: -webkit-linear-gradient(45deg, var(--aqua), var(--navy));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 10rem;
+}
+
+.textInfo {
+    cursor: pointer;
+    background: -webkit-linear-gradient(45deg, var(--fuchsia), var(--red));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 18px;
+    padding-top: .5rem;
+}
+
+.titlePreface {
+    background: -webkit-linear-gradient(45deg, var(--color-primary), var(--navy));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.textWarning {
+    background: -webkit-linear-gradient(45deg, var(--color-error), var(--color-bg-crimson));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: .2rem;
+}
+
+.dcsBtn {
+    text-decoration: underline;
+}
+
+.titleRules {
+    background: -webkit-linear-gradient(45deg, rgb(56, 127, 207), rgb(42, 242, 153));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.textRules {
+    background: -webkit-linear-gradient(60deg, rgb(49, 104, 206), rgb(109, 150, 226));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: .2rem;
+}
+
+/* Footer Styling */
+.footer-container {
+    background: rgb(24, 24, 24);
+    padding-bottom: 4rem;
+    padding-top: 5rem;
+    width: 100%;
+}
+
+.footer {
+    width: 80%;
+    height: 40vh;
+    background-color: rgb(24, 24, 24);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.footer-heading {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+}
+
+.footer-heading h2 {
+    margin-bottom: 2rem;
+}
+
+.footer-heading a {
+    color: var(--white);
+    text-decoration: none;
+    margin-bottom: .5rem;
+}
+
+.footer-heading a:hover {
+    color: var(--color-primary-dark);
+    text-decoration: underline;
+    transition: all var(--transition-speed-300) ease-in-out;
+}
+
+.footer-heading h2:hover {
+    color: var(--color-bg-crimson);
+    text-decoration: underline;
+    transition: all var(--transition-speed-400) ease;
+}
+
+@media screen and (max-width: 1150px) {
+    .footer {
+        height: 50vh;
+    }
+
+    .footer h2 {
+        padding-top: 2rem;
+    }
+}
+
+@media screen and (min-width: 920px) {
+    .footer {
+        width: 100%;
+    }
+}
