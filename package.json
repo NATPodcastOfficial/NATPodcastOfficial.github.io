@@ -1,0 +1,16 @@
+{
+  "name": "officialwebsitenodejs-nat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mohammad Rahman, Samin Yasir, Mehdad Chowdhury",
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2"
+  }
+}
